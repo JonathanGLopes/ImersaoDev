@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Imersão Dev | Conversor</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main class="stage">
+      <h1 class="title">Conversor de moedas</h1>
+
+      <section class="converter">
+        <form class="wrapper-coin">
+          <input type="number" class="coin">
+          <select class="list-coins">
+            <option value="real">Real</option>
+            <option value="sek">SEK</option>
+          </select>
+        </form>
+        <span class="comparator">=</span>
+        <form class="wrapper-coin">
+          <input type="number" class="coin">
+          <select class="list-coins">
+            <option value="real">Real</option>
+            <option value="sek">SEK</option>
+          </select>
+        </form>
+      </section>
+    </main>
+    
+    <script src="scripts/components/main.js"></script>
   </body>
 </html>

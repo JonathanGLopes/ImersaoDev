@@ -1,0 +1,4 @@
+.wrapper-coin {
+    display: flex;
+    flex-direction: column;
+}
