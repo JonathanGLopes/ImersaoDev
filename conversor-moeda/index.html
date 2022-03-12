@@ -16,16 +16,16 @@
 
       <section class="converter">
         <form class="wrapper-coin">
-          <input type="number" class="coin">
-          <select class="list-coins">
+          <input id="coin-1" type="number" class="coin">
+          <select id="list-coin1" class="list-coins">
             <option value="real">Real</option>
             <option value="sek">SEK</option>
           </select>
         </form>
         <span class="comparator">=</span>
         <form class="wrapper-coin">
-          <input type="number" class="coin">
-          <select class="list-coins">
+          <input id="coin-2" type="number" class="coin">
+          <select id="list-coin2" class="list-coins">
             <option value="real">Real</option>
             <option value="sek">SEK</option>
           </select>
@@ -33,8 +33,6 @@
       </section>
     </main>
     
-    <script src="scripts/components/main.js"></script>
-    <script type="module" src="scripts/components/coin.js"></script>
-    <script type="module" src="scripts/components/list-coin.js"></script>
+    <script src="scripts/components/wrapper-coin.js"></script>
   </body>
 </html>
