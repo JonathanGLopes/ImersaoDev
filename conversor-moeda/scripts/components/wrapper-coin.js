@@ -11,22 +11,21 @@ let listCoin2 = "";
 
 //pegando valor através de um objeto
 
-let coins = {
+const coins = {
     "coin-1": 0,
     "coin-2": 0,
 };
 
 $converter.addEventListener("input", (event) => {
-    const $origin = event.target;
-    const id = $origin.getAttribute("id");
+    const $origin = event.target; // pegando a origem (quem disparou o evento)
+    const id = $origin.getAttribute("id"); // pega o id do elemento de origem
 
-    coins[id] = $origin.value;
+    coins[id] = $origin.value; // o valor digitado no elemento
+    
+    /* Apenas com a linha de cima nós pegamos o valor de ambos inputs, 
+    não precisando mais desses ifs e reduzindo o tamanho do código */
 
-    console.log("coin-1", coins["coin-1"]);
-    console.log("coin-2", coins["coin-2"])
-    console.log("==============");
-
-    //pegando o valor dos inputs com IF
+   // pegando o valor dos inputs com IF
 
     // if ($origin.getAttribute("id") === "coin-1") {
     //     coin1 = $origin.value;
