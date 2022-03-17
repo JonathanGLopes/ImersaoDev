@@ -14,6 +14,8 @@ let listCoin2 = "";
 const coins = {
     "coin-1": 0,
     "coin-2": 0,
+    "list-coin1": 'real',
+    "list-coin2": 'sek'
 };
 
 $converter.addEventListener("input", (event) => {
@@ -21,6 +23,10 @@ $converter.addEventListener("input", (event) => {
     const id = $origin.getAttribute("id"); // pega o id do elemento de origem
 
     coins[id] = $origin.value; // o valor digitado no elemento
+
+    console.log("ID", id);
+    console.log("Value", $origin.value);
+    console.log(`coins[${id}]`, coins[id]);
     
     /* Apenas com a linha de cima nós pegamos o valor de ambos inputs, 
     não precisando mais desses ifs e reduzindo o tamanho do código */
@@ -37,11 +43,11 @@ $converter.addEventListener("input", (event) => {
 
     //pegando valor do option
 
-    if ($origin.getAttribute("id") === "list-coin1"){
-        listCoin1 = $origin.value; 
-    }
+    // if ($origin.getAttribute("id") === "list-coin1"){
+    //     listCoin1 = $origin.value; 
+    // }
 
-    if ($origin.getAttribute("id") === "list-coin2") {
-        listCoin2 = origin.value;
-    }
+    // if ($origin.getAttribute("id") === "list-coin2") {
+    //     listCoin2 = origin.value;
+    // }
 });
