@@ -15,17 +15,18 @@
       <h1 class="title">Conversor de moedas</h1>
 
       <section class="converter">
-        <form class="wrapper-coin">
-          <input id="coin-1" type="number" class="coin">
-          <select id="list-coin1" class="list-coins">
+        <form id="wrapper-1" class="wrapper-coin">
+          <input class="coin" data-ref="coin" type="number" value="1" >
+          <select class="list-coins" data-ref="list-coins">
             <option value="real">Real</option>
             <option value="sek">SEK</option>
           </select>
         </form>
+
         <span class="comparator">=</span>
-        <form class="wrapper-coin">
-          <input id="coin-2" type="number" class="coin">
-          <select id="list-coin2" class="list-coins">
+        <form id="wrapper-2" class="wrapper-coin">
+          <input class="coin" data-ref="coin" type="number" value="0.5">
+          <select class="list-coins" data-ref="list-coins">
             <option value="real">Real</option>
             <option value="sek">SEK</option>
           </select>
@@ -33,6 +34,7 @@
       </section>
     </main>
     
-    <script src="scripts/components/wrapper-coin.js"></script>
+    <script src="scripts/components/wrapper-1.js"></script>
+    <script src="scripts/components/wrapper-2.js"></script>
   </body>
 </html>
